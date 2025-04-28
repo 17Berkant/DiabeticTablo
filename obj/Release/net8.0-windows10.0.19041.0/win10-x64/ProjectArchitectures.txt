@@ -1,0 +1,1 @@
+E:\Github\DiabeticTablo\DiabeticTablo\DiabeticTablo.csproj;x64

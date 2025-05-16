@@ -128,13 +128,13 @@ public class TrackPage : ContentPage
                 var fontText = new PdfStandardFont(PdfFontFamily.Helvetica, 14);
 
                 // Başlık
-                graphics.DrawString("Ölçüm Takibi", fontTitle, PdfBrushes.Blue, new Syncfusion.Drawing.PointF(0, 0));
+                graphics.DrawString("Ölçüm Takibi", fontTitle, PdfBrushes.Turquoise, new Syncfusion.Drawing.PointF(0, 0));
 
                 float y = 40;
 
                 foreach (var m in measurements.OrderBy(x => x.Date))
                 {
-                    var text = $"{m.Date:dd.MM.yyyy} - Sabah: {m.Morning} mg/dL, Öğle: {m.Noon} mg/dL, Akşam: {m.Evening} mg/dL";
+                    var text = $"{m.Date:dd.MM.yyyy} - Sabah: {m.Morning} mg/dL, Ögle: {m.Noon} mg/dL, Akşam: {m.Evening} mg/dL";
                     graphics.DrawString(text, fontText, PdfBrushes.Black, new Syncfusion.Drawing.PointF(0, y));
                     y += 25;
                 }

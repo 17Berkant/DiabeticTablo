@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DiabeticTablo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+740a4961666cbb38707a1b7fc4bf609506a4719c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a6da9bfa1b87bb0e606d8e68df589715a03b564a")]
 [assembly: System.Reflection.AssemblyProductAttribute("DiabeticTablo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DiabeticTablo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

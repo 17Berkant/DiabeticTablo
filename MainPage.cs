@@ -1,11 +1,4 @@
-﻿using Microsoft.Maui.Controls;
-using Microsoft.Maui.Storage;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.Json;
-using System.IO;
-using Microsoft.Maui.ApplicationModel.DataTransfer;
+﻿using System.Text.Json;
 #if ANDROID
 using Android.OS;
 using Android.Views;
@@ -30,7 +23,8 @@ public class MainPage : ContentPage
     private Entry _eveningEntry;
     private Button _saveButton;
     private Button _viewMeasurementsButton;
-
+    private Label _weeklyAverageLabel;
+    private Label _monthlyAverageLabel;
     public MainPage()
     {
         Title = "Günlük Ölçüm Girişi";
@@ -55,25 +49,28 @@ public class MainPage : ContentPage
         _morningEntry = new Entry
         {
             Placeholder = "Sabah Şeker (mg/dL)",
-            Keyboard = Keyboard.Numeric
+            Keyboard = Keyboard.Numeric,
+            FontAttributes = FontAttributes.Bold
         };
 
         _noonEntry = new Entry
         {
             Placeholder = "Öğle Şeker (mg/dL)",
-            Keyboard = Keyboard.Numeric
+            Keyboard = Keyboard.Numeric,
+            FontAttributes = FontAttributes.Bold
         };
 
         _eveningEntry = new Entry
         {
             Placeholder = "Akşam Şeker (mg/dL)",
-            Keyboard = Keyboard.Numeric
+            Keyboard = Keyboard.Numeric,
+            FontAttributes = FontAttributes.Bold
         };
 
         _saveButton = new Button
         {
             Text = "Kaydet",
-            BackgroundColor = Colors.Green,
+            BackgroundColor = Colors.Turquoise,
             TextColor = Colors.White,
             FontAttributes = FontAttributes.Bold
         };
@@ -82,11 +79,24 @@ public class MainPage : ContentPage
         _viewMeasurementsButton = new Button
         {
             Text = "Ölçümleri Görüntüle",
-            BackgroundColor = Colors.Green,
+            BackgroundColor = Colors.Turquoise,
             TextColor = Colors.White,
             FontAttributes = FontAttributes.Bold
         };
         _viewMeasurementsButton.Clicked += ViewMeasurements;
+
+        _weeklyAverageLabel = new Label
+        {
+            Text = "Haftalık Ortalama: -",
+            FontAttributes = FontAttributes.Bold,
+
+        };
+
+        _monthlyAverageLabel = new Label
+        {
+            Text = "Aylık Ortalama: -",
+            FontAttributes = FontAttributes.Bold,
+        };
 
         Content = new ScrollView
         {
@@ -101,10 +111,18 @@ public class MainPage : ContentPage
                     _noonEntry,
                     _eveningEntry,
                     _saveButton,
-                    _viewMeasurementsButton
+                    _viewMeasurementsButton,
+                    _weeklyAverageLabel,
+                    _monthlyAverageLabel
                 }
             }
         };
+    }
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        CheckDailyMeasurements();
+        UpdateAverages();
     }
 
     private async void SaveMeasurement(object sender, EventArgs e)
@@ -141,6 +159,7 @@ public class MainPage : ContentPage
         {
             measurements.Add(measurement);
         }
+        UpdateAverages();
 
         Preferences.Set("Measurements", JsonSerializer.Serialize(measurements));
 
@@ -155,4 +174,55 @@ public class MainPage : ContentPage
     {
         await Navigation.PushAsync(new TrackPage());
     }
+
+    private void UpdateAverages()
+    {
+        var measurementsJson = Preferences.Get("Measurements", string.Empty);
+        var measurements = string.IsNullOrEmpty(measurementsJson)
+            ? new List<Measurement>()
+            : JsonSerializer.Deserialize<List<Measurement>>(measurementsJson) ?? new List<Measurement>();
+
+        var today = DateTime.Today;
+
+        var last7Days = measurements
+            .Where(m => m.Date >= today.AddDays(-6) && m.Date <= today)
+            .ToList();
+
+        var last30Days = measurements
+            .Where(m => m.Date >= today.AddDays(-29) && m.Date <= today)
+            .ToList();
+
+        double weeklyAvg = last7Days.Any()
+            ? last7Days.Average(m => (m.Morning + m.Noon + m.Evening) / 3.0)
+            : 0;
+
+        double monthlyAvg = last30Days.Any()
+            ? last30Days.Average(m => (m.Morning + m.Noon + m.Evening) / 3.0)
+            : 0;
+
+        _weeklyAverageLabel.Text = $"Haftalık Ortalama: {weeklyAvg:F1} mg/dL";
+        _monthlyAverageLabel.Text = $"Aylık Ortalama: {monthlyAvg:F1} mg/dL";
+    }
+    private async void CheckDailyMeasurements()
+    {
+        var today = DateTime.Today;
+
+        var measurementsJson = Preferences.Get("Measurements", string.Empty);
+        var measurements = string.IsNullOrEmpty(measurementsJson)
+            ? new List<Measurement>()
+            : JsonSerializer.Deserialize<List<Measurement>>(measurementsJson) ?? new List<Measurement>();
+
+        var todayMeasurement = measurements.FirstOrDefault(m => m.Date.Date == today);
+
+        if (todayMeasurement == null || (todayMeasurement.Morning == 0 && todayMeasurement.Noon == 0 && todayMeasurement.Evening == 0))
+        {
+            var toast = CommunityToolkit.Maui.Alerts.Toast.Make(
+                "Bugün için ölçüm yapmayı unutma!",
+                CommunityToolkit.Maui.Core.ToastDuration.Long,
+                30);
+
+            await toast.Show();
+        }
+    }
+
 }

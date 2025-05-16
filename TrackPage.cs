@@ -3,6 +3,7 @@ using Colors = Microsoft.Maui.Graphics.Colors;
 using Syncfusion.Pdf.Graphics;
 using PdfDocument = Syncfusion.Pdf.PdfDocument;
 using PdfPage = Syncfusion.Pdf.PdfPage;
+using DiabeticTablo;
 
 namespace DiabeticTablo;
 

@@ -1164,3 +1164,4 @@ E:\Github\DiabeticTablo\DiabeticTablo\obj\Debug\net8.0-android\android\src\crc64
 E:\Github\DiabeticTablo\DiabeticTablo\obj\Debug\net8.0-android\android\src\crc64f5844edce43316e7\SfRotatorFlingGestureListener.java
 E:\Github\DiabeticTablo\DiabeticTablo\obj\Debug\net8.0-android\android\src\crc64f5844edce43316e7\TabStrip.java
 E:\Github\DiabeticTablo\DiabeticTablo\obj\Debug\net8.0-android\android\src\crc64f5844edce43316e7\ThumbnailStrip.java
+E:\Github\DiabeticTablo\DiabeticTablo\obj\Debug\net8.0-android\DiabeticTablo.sourcelink.json

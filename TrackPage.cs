@@ -25,7 +25,7 @@ public class TrackPage : ContentPage
         _shareButton = new Button
         {
             Text = "PDF Olarak Paylaş",
-            BackgroundColor = Colors.Green,
+            BackgroundColor = Colors.Turquoise,
             TextColor = Colors.White,
             FontAttributes = FontAttributes.Bold,
             HorizontalOptions = LayoutOptions.Fill

@@ -4,6 +4,8 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "DiabeticTablo.dll" comes first in this list. */
 		"DiabeticTablo.dll",
 		"BitMiracle.LibTiff.NET.dll",
+		"CommunityToolkit.Maui.dll",
+		"CommunityToolkit.Maui.Core.dll",
 		"FmgLib.MauiMarkup.dll",
 		"GoogleGson.dll",
 		"Microsoft.Extensions.Configuration.dll",

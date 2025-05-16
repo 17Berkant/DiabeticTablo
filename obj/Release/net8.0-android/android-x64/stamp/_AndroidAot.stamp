@@ -1,6 +1,8 @@
 obj\Release\net8.0-android\android-x64\aot\_Microsoft.Android.Resource.Designer.dll.so
 obj\Release\net8.0-android\android-x64\aot\DiabeticTablo.dll.so
 obj\Release\net8.0-android\android-x64\aot\BitMiracle.LibTiff.NET.dll.so
+obj\Release\net8.0-android\android-x64\aot\CommunityToolkit.Maui.dll.so
+obj\Release\net8.0-android\android-x64\aot\CommunityToolkit.Maui.Core.dll.so
 obj\Release\net8.0-android\android-x64\aot\FmgLib.MauiMarkup.dll.so
 obj\Release\net8.0-android\android-x64\aot\Microsoft.Extensions.Configuration.dll.so
 obj\Release\net8.0-android\android-x64\aot\Microsoft.Extensions.Configuration.Abstractions.dll.so
@@ -10,6 +12,7 @@ obj\Release\net8.0-android\android-x64\aot\Microsoft.Extensions.Logging.dll.so
 obj\Release\net8.0-android\android-x64\aot\Microsoft.Extensions.Logging.Abstractions.dll.so
 obj\Release\net8.0-android\android-x64\aot\Microsoft.Extensions.Options.dll.so
 obj\Release\net8.0-android\android-x64\aot\Microsoft.Extensions.Primitives.dll.so
+obj\Release\net8.0-android\android-x64\aot\Microsoft.Maui.Controls.Compatibility.dll.so
 obj\Release\net8.0-android\android-x64\aot\Microsoft.Maui.Controls.dll.so
 obj\Release\net8.0-android\android-x64\aot\Microsoft.Maui.Controls.Xaml.dll.so
 obj\Release\net8.0-android\android-x64\aot\Microsoft.Maui.dll.so
@@ -63,6 +66,7 @@ obj\Release\net8.0-android\android-x64\aot\Xamarin.KotlinX.Coroutines.Core.Jvm.d
 obj\Release\net8.0-android\android-x64\aot\Microsoft.CSharp.dll.so
 obj\Release\net8.0-android\android-x64\aot\Microsoft.Win32.Primitives.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Collections.Concurrent.dll.so
+obj\Release\net8.0-android\android-x64\aot\System.Collections.Immutable.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Collections.NonGeneric.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Collections.Specialized.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Collections.dll.so
@@ -87,6 +91,7 @@ obj\Release\net8.0-android\android-x64\aot\System.Linq.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Memory.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Net.Http.Json.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Net.Http.dll.so
+obj\Release\net8.0-android\android-x64\aot\System.Net.Mail.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Net.NameResolution.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Net.NetworkInformation.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Net.Primitives.dll.so
@@ -116,6 +121,7 @@ obj\Release\net8.0-android\android-x64\aot\System.Threading.Tasks.Parallel.dll.s
 obj\Release\net8.0-android\android-x64\aot\System.Threading.Thread.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Threading.ThreadPool.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Threading.dll.so
+obj\Release\net8.0-android\android-x64\aot\System.Web.HttpUtility.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Xml.Linq.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Xml.ReaderWriter.dll.so
 obj\Release\net8.0-android\android-x64\aot\System.Xml.XDocument.dll.so

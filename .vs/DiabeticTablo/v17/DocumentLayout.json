@@ -5,14 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{85C753AF-E949-AB0F-D750-9B9AB460AD03}|DiabeticTablo.csproj|e:\\github\\diabetictablo\\diabetictablo\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85C753AF-E949-AB0F-D750-9B9AB460AD03}|DiabeticTablo.csproj|solutionrelative:mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C753AF-E949-AB0F-D750-9B9AB460AD03}|DiabeticTablo.csproj|e:\\github\\diabetictablo\\diabetictablo\\trackpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85C753AF-E949-AB0F-D750-9B9AB460AD03}|DiabeticTablo.csproj|solutionrelative:trackpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85C753AF-E949-AB0F-D750-9B9AB460AD03}|DiabeticTablo.csproj|e:\\github\\diabetictablo\\diabetictablo\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85C753AF-E949-AB0F-D750-9B9AB460AD03}|DiabeticTablo.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,33 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "E:\\Github\\DiabeticTablo\\DiabeticTablo\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "MauiProgram.cs",
-              "ToolTip": "E:\\Github\\DiabeticTablo\\DiabeticTablo\\MauiProgram.cs",
-              "RelativeToolTip": "MauiProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T02:25:35.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TrackPage.cs",
-              "DocumentMoniker": "E:\\Github\\DiabeticTablo\\DiabeticTablo\\TrackPage.cs",
-              "RelativeDocumentMoniker": "TrackPage.cs",
-              "ToolTip": "E:\\Github\\DiabeticTablo\\DiabeticTablo\\TrackPage.cs",
-              "RelativeToolTip": "TrackPage.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T02:21:28.78Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -58,7 +28,7 @@
               "RelativeDocumentMoniker": "MainPage.cs",
               "ToolTip": "E:\\Github\\DiabeticTablo\\DiabeticTablo\\MainPage.cs",
               "RelativeToolTip": "MainPage.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAmwHQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T02:18:05.095Z",
               "EditorCaption": ""

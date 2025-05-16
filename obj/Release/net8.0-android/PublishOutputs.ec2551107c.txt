@@ -1,3 +1,4 @@
+E:\Github\DiabeticTablo\DiabeticTablo\bin\Release\net8.0-android\publish\com.berkantapps.diabetictablo-Signed.aab
+E:\Github\DiabeticTablo\DiabeticTablo\bin\Release\net8.0-android\publish\com.berkantapps.diabetictablo.aab
 E:\Github\DiabeticTablo\DiabeticTablo\bin\Release\net8.0-android\publish\com.berkantapps.diabetictablo-Signed.apk
-E:\Github\DiabeticTablo\DiabeticTablo\bin\Release\net8.0-android\publish\com.berkantapps.diabetictablo.apk
 E:\Github\DiabeticTablo\DiabeticTablo\bin\Release\net8.0-android\publish\_Microsoft.Android.Resource.Designer.dll
